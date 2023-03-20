@@ -1,0 +1,9 @@
+#!/usr/bin/with-contenv bash
+
+# Install packages
+if [ ! -f /usr/bin/inotifywait ]; then
+    echo "**** Adding inotify-tools to package install list ****"
+    echo "inotify-tools" >> /mod-repo-packages-to-install.list
+else
+    echo "**** inotify-tools already installed, skipping ****"
+fi

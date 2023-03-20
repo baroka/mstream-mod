@@ -1,0 +1,4 @@
+#!/usr/bin/with-contenv bash
+
+# Run index watch in background
+/usr/local/bin/music.sh
